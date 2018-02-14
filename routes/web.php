@@ -14,6 +14,9 @@
 
 Route::get('/', 'FrontController@welcomePage');
 
+Route::get('/contact-form', 'FrontController@contactForm');
+Route::post('/contact-form', 'FrontController@contactFormSubmit');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

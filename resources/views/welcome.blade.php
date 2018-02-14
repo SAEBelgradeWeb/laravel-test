@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+    <users usersdata="{{$users}}"></users>
+
 
     <vlada name="{{$siteName}}"></vlada>
     <h1> {{__('front.welcome', ['siteName' => $siteName] )}}</h1>

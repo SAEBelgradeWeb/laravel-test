@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Moj sajt</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
 </head>
 <body>
 
@@ -22,5 +23,7 @@
 
 <script src="{{mix('js/app.js')}}"></script>
 @yield('scripts')
+
+@include('sweet::alert')
 </body>
 </html>

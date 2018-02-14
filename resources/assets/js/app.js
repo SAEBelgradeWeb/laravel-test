@@ -8,7 +8,11 @@
 require('./bootstrap');
 
 require('./jquery-shit');
+require('sweetalert');
 window.Vue = require('vue');
+
+window.EventBus = new Vue();
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -19,6 +23,8 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 Vue.component('vlada', require('./components/VladaProba.vue'));
+
+Vue.component('users', require('./components/Users.vue'));
 
 const app = new Vue({
     el: '#app'
