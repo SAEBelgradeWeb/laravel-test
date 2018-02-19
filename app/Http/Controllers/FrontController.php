@@ -4,10 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Contact;
 use App\Http\Requests\ContactFormRequest;
+use App\Mail\WelcomeMail;
+use App\Mail\WelcomeMail2;
+use App\Notifications\UserSubscribed;
 use App\User;
 use Alert;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Mail;
 
 class FrontController extends Controller
 {
@@ -37,5 +41,14 @@ class FrontController extends Controller
         Alert::warning('Warning Message', 'Optional Title');
         return redirect('/contact-form');
 
+    }
+
+    public function subscribe(Request $request) {
+
+        //Mail::to($request->email)->send(new WelcomeMail2($request->email));
+
+        $user = User::find(1);
+
+        $user->notify(new UserSubscribed());
     }
 }
