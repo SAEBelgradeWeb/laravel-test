@@ -7,6 +7,7 @@
 
 require('./bootstrap');
 
+
 require('./jquery-shit');
 require('sweetalert');
 window.Vue = require('vue');
