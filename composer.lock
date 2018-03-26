@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f263047121f74f9c98ae74b84831ff22",
-    "content-hash": "c01963a91e773bfa5629d705a31f56a4",
+    "hash": "32d0950b5f0cb8f5c2371af1cdfc95c2",
+    "content-hash": "1724bf9f932ab85165ff8fda4b986869",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1537,6 +1537,51 @@
                 "voyager"
             ],
             "time": "2018-02-08 09:32:42"
+        },
+        {
+            "name": "laravel-frontend-presets/karma-eslint",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-frontend-presets/karma-eslint.git",
+                "reference": "bb67c5f635484e71db07c7abb557191e832533ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-frontend-presets/karma-eslint/zipball/bb67c5f635484e71db07c7abb557191e832533ef",
+                "reference": "bb67c5f635484e71db07c7abb557191e832533ef",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.5.*|5.6.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelFrontendPresets\\KarmaEslintPreset\\KarmaEslintPresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelFrontendPresets\\KarmaEslintPreset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel 5.5.x|5.6.x Front-end preset for Karma & ESLint (Unit Testing Vue Component, Code Coverage, ESLint, Babel...)",
+            "keywords": [
+                "coverage",
+                "eslint",
+                "karma",
+                "laravel",
+                "preset",
+                "testing"
+            ],
+            "time": "2018-02-16 21:03:05"
         },
         {
             "name": "laravel/framework",

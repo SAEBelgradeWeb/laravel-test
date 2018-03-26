@@ -10,7 +10,7 @@ require('./bootstrap');
 require('./jquery-shit');
 require('sweetalert');
 window.Vue = require('vue');
-
+/* eslint-disable no-undef,no-unused-vars*/
 window.EventBus = new Vue();
 
 
