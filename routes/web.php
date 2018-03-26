@@ -31,3 +31,8 @@ Route::post('/subscribe', 'FrontController@subscribe');
 //
 //});
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

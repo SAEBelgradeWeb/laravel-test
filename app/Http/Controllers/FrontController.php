@@ -44,10 +44,9 @@ class FrontController extends Controller
     }
 
     public function subscribe(Request $request) {
-
-        //Mail::to($request->email)->send(new WelcomeMail2($request->email));
-
         $user = User::find(1);
+
+        Mail::to($request->email)->send(new WelcomeMail2($request->email));
 
         $user->notify(new UserSubscribed());
     }
